@@ -64,6 +64,7 @@ document.getElementById("sketches").innerHTML="Sketch To Be Drawn:"+sketch;
         }
         else{
             console.log(results);
+            draw_sketch=results[0].label;
             document.getElementById("label").innerHTML="label:"+results[0].label;
             document.getElementById("confidence").innerHTML="Confidence:"+Math.round(results[0].confidence*100)+"%";
         }   
